@@ -10,6 +10,7 @@
 <img src = "Project Photo/img-7.jpg" width = "723" height = "224" />
 <img src = "Project Photo/img-8.jpg" width = "434" height = "214" />
 </p>
+https://user-images.githubusercontent.com/56933629/200182420-3281cdc3-58ea-40ac-bcb1-8d5b57b517ea.mp4
 Created by E-Protocol
 https://github.com/e-protocol
 <br/>
@@ -38,6 +39,7 @@ Raspberry part
 startup.sh script runs cpuTemp programm on system boot, this programm reads cpu temperature and 
 sends it by COM to Arduino. The source code and make file can be found at src/raspberry/cpuTemp
 Just for help the raspberry pin map can be found at Project Photo/img-7.jpg
+
 <br/>
 ********************************************************************************
 <br/>
@@ -45,6 +47,7 @@ Power supply
 This is a DC-DC 12-5V converter. It requires at least 12V 3A power supply.
 The raspberry curcuit itself requires at least 5V for stable work.
 The curcuit can be found at Project Photo/img-8.jpg
+There is a demonstartion short video of power ON/OFF
 
 NOTE! Under load the voltage goes down, so with help of mulimeter adjust the potentiometer
 to get voltage around 5.2-5.4V. The real PC power supply has lots of additional stuff:
