@@ -1,0 +1,45 @@
+1: Create a file (let's call it shutdownGpio.service).
+
+2: Add the following into shutdownGpio.service:
+
+[Unit]
+Description=This service calls shutdownScript.sh upon shutdown or reboot.
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStop=/home/pi/shutdownScript.sh
+
+[Install]
+WantedBy=multi-user.target
+
+3: Move it into the correct directory for systemd by running sudo mv /home/pi/shutdownGpio.service /etc/systemd/system/shutdownGpio.service
+
+4: Ensure the script to launch upon shutdown has appropriate permissions: chmod u+x /home/pi/shutdownScript.sh
+
+5: Start the service: sudo systemctl start shutdownGpio --now
+
+6: Make the service automatically start upon boot: sudo systemctl enable shutdownGpio
+
+7: Stop the service: sudo systemctl stop shutdownGpio
+
+
+
+#first.py
+import RPi.GPIO as GPIO
+import time
+pin = 21
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(pin,GPIO.OUT)
+GPIO.output(pin,GPIO.HIGH)
+
+
+
+#   Exports pin to userspace
+echo "21" > /sys/class/gpio/export                  
+
+# Sets pin 18 as an output
+echo "out" > /sys/class/gpio/gpio18/direction
+
+# Sets pin 18 to high
+echo "1" > /sys/class/gpio/gpio18/value
