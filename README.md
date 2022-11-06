@@ -6,8 +6,9 @@
 <img src = "Project Photo/img-3.jpg" width = "409" height = "230" />
 <img src = "Project Photo/img-4.jpg" width = "409" height = "230" />
 <img src = "Project Photo/img-5.jpg" width = "409" height = "230" />
-<img src = "Project Photo/img-6.jpg" width = "723" height = "224" />
-<img src = "Project Photo/img-7.jpg" width = "434" height = "214" />
+<img src = "Project Photo/img-6.jpg" width = "409" height = "230" />
+<img src = "Project Photo/img-7.jpg" width = "723" height = "224" />
+<img src = "Project Photo/img-8.jpg" width = "434" height = "214" />
 </p>
 Created by E-Protocol
 https://github.com/e-protocol
